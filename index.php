@@ -93,7 +93,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <nav class="navbar navbar-expand-lg">
-                                <a class="navbar-brand" href="index.html">
+                                <a class="navbar-brand" href="index.php">
                                     <img src="_assets/images/logo/default_white.png" alt="Logo">
                                 </a>
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -419,7 +419,7 @@
                                 <a class="logo" href="#">
                                     <img src="_assets/images/logo/default.png" alt="logo">
                                 </a>
-                                <p class="text">Copyright &copy; 2020 Sarpex IT Services<br />All rights reserved</p>
+                                <p class="text">Copyright &copy; <?= date("Y", time()) ?> Sarpex IT Services<br />All rights reserved</p>
 
                                 <ul class="social">
                                     <li><a href="https://github.com/SarpexIT" target="_blank"><i class="lni-github-original"></i></a></li>
@@ -472,7 +472,7 @@
                         <div class="col-lg-12">
                             <div class="copyright d-sm-flex justify-content-between">
                                 <div class="copyright-content">
-                                    <p class="text">Copyright &copy; 2020 Sarpex IT Services - All rights reserved</p>
+                                    <p class="text">Copyright &copy; <?= date("Y", time()) ?> Sarpex IT Services - All rights reserved</p>
                                 </div> <!-- copyright content -->
                             </div> <!-- copyright -->
                         </div>
