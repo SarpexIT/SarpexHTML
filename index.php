@@ -136,7 +136,7 @@
                                 <h3 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Sarpex IT Services</h3>
                                 <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">Cloud Dienstleistungen aus einer Hand.</h2>
                                 <!-- <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s"></p> -->
-                                <a href="mailto:it@kleine-vorholt.net?subject=Anfrage:%20Cloud%20Services%20%26%20IT-Dienstleistungen" target="_blank" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Angebot einholen</a>
+                                <a href="mailto:service@sarpex.eu?subject=Anfrage:%20Cloud%20Services%20%26%20IT-Dienstleistungen" target="_blank" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">Angebot einholen</a>
                             </div> <!-- header hero content -->
                         </div>
                     </div> <!-- row -->
@@ -311,7 +311,7 @@
                                 <h3 class="title">Kompetent & Hilfsbereit<br /><span>Produktberatung</span></h3>
                             </div> <!-- section title -->
                             <p class="text">Bei Fragen, welche Dienstleistungen & in welchen Umfang Sie benötigen um Ihre Vorstellungen umzusetzen, helfen unsere Mitarbeiter gerne.</p>
-                            <a href="mailto:it@kleine-vorholt.net?subject=Anfrage:%20Cloud%20Services%20%26%20IT-Dienstleistungen" class="main-btn">Jetzt Beraten lassen</a>
+                            <a href="mailto:service@sarpex.eu?subject=Anfrage:%20Cloud%20Services%20%26%20IT-Dienstleistungen" class="main-btn">Jetzt Beraten lassen</a>
                         </div> <!-- about content -->
                     </div>
                     <div class="col-lg-6">
@@ -445,9 +445,10 @@
                                         <h4 class="title">Infrastruktur</h4>
                                     </div>
                                     <ul class="link">
-                                        <li><a href="https://status.sarpex.eu">System Status</a></li>
-                                        <li><a href="https://lg.sarpex.eu">Looking Glass</a></li>
-                                        <li><a href="https://smokeping.combahton.net/smokeping/smokeping.cgi">Smoke Ping</a></li>
+                                        <li><a href="https://status.sarpex.eu" target="_blank">System Status</a></li>
+                                        <li><a href="https://lg.sarpex.eu" target="_blank">Looking Glass</a></li>
+                                        <li><a href="https://smokeping.combahton.net/smokeping/smokeping.cgi" target="_blank">Smoke Ping</a></li>
+                                        <li><a href="https://cdn.sarpex.eu" target="_blank">CDN</a></li>
                                     </ul>
                                 </div> <!-- footer wrapper -->
                             </div> <!-- footer link -->
@@ -459,7 +460,7 @@
                                 </div>
                                 <ul class="contact">
                                     <li>Telefon: +49 - 17642432256</li>
-                                    <li>E-Mail: it@kleine-vorholt.net</li>
+                                    <li>E-Mail: service@sarpex.eu</li>
                                     <li>Web: https://sarpex.eu</li>
                                 </ul>
                             </div> <!-- footer contact -->
