@@ -218,7 +218,7 @@
                             </div>
                             <div class="services-content mt-30">
                                 <h4 class="services-title"><a href="#">DNS-Service</a></h4>
-                                <p class="text">Unsere DNS-Infrastruktur stellt eine perfekte Ergänzung für Ihr bestehendes Netzwerk dar.<br />Mit Anycast DNS Servern und niedriger Latenz wird Ihr Netzwerk noch performanter!</p>
+                                <p class="text">Unsere DNS-Infrastruktur stellt eine perfekte Ergänzung für Ihr bestehendes Netzwerk dar.<br />Dank niedriger Latenz und Hochverfügbarkeit wird Ihr Netzwerk noch performanter!</p>
                             </div>
                         </div> <!-- single services -->
                     </div>
@@ -231,8 +231,8 @@
                                 <i class="lni-bolt-alt"></i>
                             </div>
                             <div class="services-content mt-30">
-                                <h4 class="services-title"><a href="#">IP-Transit & CDN</a></h4>
-                                <p class="text">Wir betreiben mehrere IP-Subnetze an verschiedenen Standorten wie Frankfurt, Helsinki oder Florida, um Daten in Sekundenschnelle an Endkunden aus aller Welt auszuliefern.</p>
+                                <h4 class="services-title"><a href="#">CDN</a></h4>
+                                <p class="text">Unsere Content Delivery Systeme garantieren schnelle und hochverfügbare Datenauslieferung rund um den Globus. Ein CDN ist daher bestens für die Bereitstellung von Ressourcen für z.B. Phone-Apps/Webapps geeignet.</p>
                             </div>
                         </div> <!-- single services -->
                     </div>
@@ -353,30 +353,30 @@
                                     <div class="line"></div>
                                     <h3 class="title">Daten & Fakten<br><span>Über unsere Infrastruktur</span></h3>
                                 </div> <!-- section title -->
-                                <p class="text">In unseren Rechenzentren setzen wir auf namenhafte Hersteller um höchstmögliche Qualität zu garantieren.</p>
+                                <p class="text">Bei unserer gesamten Hardware setzen wir auf namenhafte Hersteller um höchstmögliche Qualität & Ausfallsicherheit zu garantieren.</p>
                             </div> <!-- counter content -->
                             <div class="row no-gutters">
                                 <div class="col-4">
                                     <div class="single-counter counter-color-1 d-flex align-items-center justify-content-center">
                                         <div class="counter-items text-center">
-                                            <span class="count"><span class="counter">18</span>x</span>
-                                            <p class="text">Hostsysteme</p>
+                                            <span class="count"><span class="counter" id="cnt[0][0]">n/A</span><span id="cnt[0][1]"> -</span></span>
+                                            <p class="text" id="cnt[0][2]">No Data</p>
                                         </div>
                                     </div> <!-- single counter -->
                                 </div>
                                 <div class="col-4">
                                     <div class="single-counter counter-color-2 d-flex align-items-center justify-content-center">
                                         <div class="counter-items text-center">
-                                            <span class="count"><span class="counter">40</span> Gbit/s</span>
-                                            <p class="text">Anbindung</p>
+                                            <span class="count"><span class="counter" id="cnt[1][0]">n/A</span><span id="cnt[1][1]"> -</span></span>
+                                            <p class="text" id="cnt[1][2]">No Data</p>
                                         </div>
                                     </div> <!-- single counter -->
                                 </div>
                                 <div class="col-4">
-                                    <div class="single-counter counter-color-3 d-flex align-items-center justify-content-center">
+                                    <div class="single-counter counter-color-3 d-flex align-items-center justify-content-center" onclick="window.location.href='https://status.sarpex.eu'">
                                         <div class="counter-items text-center">
-                                            <span class="count"><span class="counter">99.98</span> %</span>
-                                            <p class="text">Verfügbarkeit</p>
+                                            <span class="count"><span class="counter" id="cnt[2][0]">n/A</span><span id="cnt[2][1]"> -</span></span>
+                                            <p class="text" id="cnt[2][2]">No Data</p>
                                         </div>
                                     </div> <!-- single counter -->
                                 </div>
@@ -447,7 +447,7 @@
                                     <ul class="link">
                                         <li><a href="https://status.sarpex.eu" target="_blank">System Status</a></li>
                                         <li><a href="https://lg.sarpex.eu" target="_blank">Looking Glass</a></li>
-                                        <li><a href="https://smokeping.combahton.net/smokeping/smokeping.cgi" target="_blank">Smoke Ping</a></li>
+                                        <li><a href="#!" onclick="alert('Die folgende Seite gehört nicht zu unserem Internetauftritt und ist ein Service unseres Netzwerkdienstleisters.'); newTab('https://smokeping.combahton.net/smokeping/smokeping.cgi');">Smoke Ping</a></li>
                                         <li><a href="https://cdn.sarpex.eu" target="_blank">CDN</a></li>
                                     </ul>
                                 </div> <!-- footer wrapper -->
@@ -473,7 +473,7 @@
                         <div class="col-lg-12">
                             <div class="copyright d-sm-flex justify-content-between">
                                 <div class="copyright-content">
-                                    <p class="text">Copyright &copy; <?= date("Y", time()) ?> Sarpex IT Services - All rights reserved</p>
+                                    <p class="text">Copyright &copy; 2019 - <?= date("Y", time()) ?> Sarpex IT Services - All rights reserved</p>
                                 </div> <!-- copyright content -->
                             </div> <!-- copyright -->
                         </div>
@@ -544,6 +544,27 @@
 
         <!--====== Main js ======-->
         <script src="_assets/js/main.js"></script>
+
+        <!--====== Functions ======-->
+        <script type="text/javascript">
+            function newTab(url) {
+                window.open(url, '_blank');
+            }
+
+            function setCounter(counterID, counterVal, counterUnit, counterName) {
+                document.getElementById('cnt['+counterID+'][0]').innerHTML = counterVal;
+                document.getElementById('cnt['+counterID+'][1]').innerHTML = counterUnit;
+                document.getElementById('cnt['+counterID+'][2]').innerHTML = counterName;
+            }
+
+        </script>
+
+        <!--====== Counter Config ======-->
+        <script type="text/javascript">
+            setCounter(0, 6, 'x', 'Hostsysteme');
+            setCounter(1, 40, ' Gbit/s', 'Anbindung');
+            setCounter(2, 99.98, ' %', 'Verfügbarkeit');
+        </script>
 
     </body>
 
