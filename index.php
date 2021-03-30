@@ -448,7 +448,7 @@
                                         <li><a href="https://status.sarpex.eu" target="_blank">System Status</a></li>
                                         <li><a href="https://lg.sarpex.eu" target="_blank">Looking Glass</a></li>
                                         <li><a href="#!" onclick="alert('Die folgende Seite gehört nicht zu unserem Internetauftritt und ist ein Service unseres Netzwerkdienstleisters.'); newTab('https://smokeping.combahton.net/smokeping/smokeping.cgi');">Smoke Ping</a></li>
-                                        <li><a href="https://cdn.sarpex.eu" target="_blank">CDN</a></li>
+                                        <li><a href="http://cdn.sarpex.eu" target="_blank">CDN</a></li>
                                     </ul>
                                 </div> <!-- footer wrapper -->
                             </div> <!-- footer link -->
